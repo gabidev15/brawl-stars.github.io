@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brawl Stars Stats</title>
+    <link rel="icon" href="demo_files/resources/chart.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="demo_files/styles.css">
+    <link rel="stylesheet" href="demo_files/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+
+<body>
+    <div id="HomeDisplay">
+        <header class="bg-primary">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12">
+                        <div class="text-center m-0 vh-100 d-flex flex-column justify-content-center text-light">
+                            <div id="HomeDisplay">
+                                <h1 class="display-4">Brawl Stars Stats</h1>
+                                <p class="lead">A project that uses the Brawl Stars API to create various graphs from in
+                                    game statistics.</p>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6 mx-auto">
+                                        <div class="input-group mb-3">
+                                            <input type="text" id="playerTag" class="form-control form-control-lg"
+                                                placeholder="2UCLR0998">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-light btn-lg rounded-right"
+                                                    id="showGraph" type="button">Enter Tag</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="bg-primary m-0 vh-100" id="DataDisplay">
+        <div class="row align-items-center justify-content-center h-100">
+            <div class="col-8">
+                <div class="card bg-transparent border-0">
+                    <div class="card-header text-light text-center bg-transparent border-0">
+                        <h1>The Victory Donut</h1>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="chDonut1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+        <div class="container">
+            <a class="navbar-brand mr-1 mb-1 mt-0" href="https://github.com/ChillHopOverflow">ChillHopOverflow</a>
+            <svg class="bi bi-soundwave" width="1.5em" height="1.5em" viewBox="0 0 16 18" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke="white" stroke-linecap="round" d="M2.5 7v2m12-2v2m-2-3v4m-8-4v4m4-7.5v11m-2-9v7m4-7v7" />
+            </svg>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="demo_files/pages/compare.html">Compare</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="demo_files/pages/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="demo_files/pages/contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="demo_files/index.js"></script>
+</body>
+
+</html>
